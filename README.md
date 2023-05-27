@@ -42,7 +42,7 @@
 |服务商 点击图标一键部署|简介|
 |---|---|
 |[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/GE_YVq?referralCode=s40fic)|Railway|
-|[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/jianjianai/NewBingGoGo-Web)|Render|
+|[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/JacobHu0723/NewBingGoGo-Web)|Render|
 |[![Deploy to Replit]()](https://replit.com/@jianjianai/NewBingGoGo-Web)|replit|
 
 
