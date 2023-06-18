@@ -275,7 +275,7 @@ body.c .ThemeColors {
 #SearchSuggestions>a {
     backdrop-filter: blur(10px);
     background-color: #ffffff82;
-    border-radius: 2rem;
+    border-radius: 0.6rem;
     padding: 0.5rem;
     font-size: 0.9rem;
     margin: 0.2rem;
@@ -365,7 +365,7 @@ body:has(.my) #restart {
 #send {
     border: 0;
     margin: 0 1rem 1rem 0;
-    border-radius: 2rem;
+    border-radius: 0.6rem;
     background-color: rgb(182 196 255);
     height: 1.8rem;
     font-size: 0.8rem;
@@ -485,9 +485,9 @@ div#cueWord-search{
     align-items: stretch;
     max-width: 100%;
     max-width: -webkit-fill-available;
-    width: 40rem;
+    width: 33rem;
     height: 2rem;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     align-self: center;
     margin-top: 0.5rem;
     border: 1px solid #0000002e;
@@ -505,7 +505,7 @@ div#cueWord-search{
     height: 100%;
     overflow: auto;
     background-color: #ffffff75;
-    border-radius: 1rem;
+    border-radius: 0.75rem;
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -515,7 +515,7 @@ div#cueWord-search{
 #cueWord-selected{
     min-height: 2rem;
     background-color: #ffffff75;
-    border-radius: 1rem;
+    border-radius: 0.75rem;
     border: 1px solid #0000002e;
     flex: none;
     display: flex;
@@ -626,12 +626,13 @@ body {
 }
 
 #ChatRecordsListDiv>div {
-    margin: 0.5rem 0;
+    margin: 0.5rem 0.3rem;
     padding: 0.5rem 0.5rem;
     background-color: #ffffff70;
     cursor: pointer;
     backdrop-filter: blur(10px);
     position: relative;
+    border-radius: 0.6rem;
 }
 #ChatRecordsListDiv>div.edit{
     background-color: #fffffff5;
@@ -684,7 +685,7 @@ body {
 
 #chatTypeDiv>.chatTypeChose {
     background-color: #ffffffcc;
-    border-radius: 2rem;
+    border-radius: 1rem;
     width: 9rem;
     height: 4rem;
     margin: 1rem 0.3rem;
@@ -692,7 +693,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 0.5rem solid #ffffffcc;
+    border: 0.1rem solid #ffffffcc;
     cursor: pointer;
 }
 
