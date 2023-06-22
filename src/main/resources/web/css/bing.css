@@ -601,7 +601,7 @@ body {
 #ChatRecordsListDivOut {
     position: fixed;
     right: 0;
-    top: 0;
+    top: 4rem;
     width: 0;
     height: 100%;
     display: flex;
@@ -610,6 +610,8 @@ body {
     overflow: hidden;
     transition: all 0.5s;
     justify-content: flex-end;
+    backdrop-filter: blur(10px);
+    background-color: #ffffff78;
 }
 
 #ChatRecordsListDivOut.open {
@@ -617,7 +619,7 @@ body {
 }
 
 #ChatRecordsListIn {
-    margin-top: 4rem;
+    margin-top: 0;
     margin-bottom: 7rem;
     width: 20rem;
     min-width: 20rem;
