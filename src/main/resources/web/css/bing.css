@@ -635,7 +635,7 @@ body {
     backdrop-filter: blur(10px);
     position: relative;
     border-radius: 0.6rem;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1.5px 2px rgba(0, 0, 0, 0.1);
 }
 #ChatRecordsListDiv>div.edit{
     background-color: #fffffff5;
@@ -688,7 +688,7 @@ body {
 
 #chatTypeDiv>.chatTypeChose {
     background-color: #ffffffcc;
-    border-radius: 1rem;
+    border-radius: 0.75rem;
     width: 9rem;
     height: 4rem;
     margin: 1rem 0.3rem;
@@ -698,7 +698,7 @@ body {
     justify-content: center;
     border: 0.1rem solid #ffffffcc;
     cursor: pointer;
-    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.2);
 }
 
 #chatTypeDiv>.chatTypeChose>p {
@@ -798,7 +798,7 @@ body {
     max-width: 90%;
     margin-bottom: 1rem;
     text-align: left;
-    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1.5px 7px rgba(0, 0, 0, 0.2);
 }
 .my>.bobo{
     font-size: 1rem;
