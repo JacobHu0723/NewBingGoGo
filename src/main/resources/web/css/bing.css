@@ -623,7 +623,7 @@ body {
     margin-bottom: 7rem;
     width: 20rem;
     min-width: 20rem;
-    background-color: #ffffff33;
+    /* background-color: #ffffff33; */
     overflow-y: auto;
 }
 
@@ -635,6 +635,7 @@ body {
     backdrop-filter: blur(10px);
     position: relative;
     border-radius: 0.6rem;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
 }
 #ChatRecordsListDiv>div.edit{
     background-color: #fffffff5;
@@ -697,6 +698,7 @@ body {
     justify-content: center;
     border: 0.1rem solid #ffffffcc;
     cursor: pointer;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
 }
 
 #chatTypeDiv>.chatTypeChose>p {
@@ -796,6 +798,7 @@ body {
     max-width: 90%;
     margin-bottom: 1rem;
     text-align: left;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
 }
 .my>.bobo{
     font-size: 1rem;
