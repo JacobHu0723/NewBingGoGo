@@ -33,16 +33,17 @@ self.addEventListener('activate', function(e) {
   );
 });
 
+// 监听 fetch 事件，在发起网络请求时返回缓存的响应
 self.addEventListener('fetch', event => {
+  console.log('[Service Worker] Fetching something ....', event);
+  // This fixes a weird bug in Chrome when you open the Developer Tools
+  if (event.request.cache === 'only-if-cached' && event.request.mode !== 'same-origin') {
+    return;
+  }
   event.respondWith(
     caches.match(event.request)
-      .then(response => {
-        // 如果缓存中有匹配的响应，则返回缓存的响应
-        if (response) {
-          return response;
-        }
-        // 否则，发起新的网络请求
-        return fetch(event.request);
-      })
+    .then(response => {
+      return response || fetch(event.request);
+    })
   );
 });
