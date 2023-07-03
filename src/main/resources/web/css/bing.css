@@ -209,6 +209,15 @@ div.markdown-body {
     }
 }
 
+#passwd {
+    background-color: transparent;
+    border-style: none;
+    outline-style: none;
+    height: 100%;
+    width: 100%;
+    caret-color: transparent;
+    color: transparent;
+}
 
 
 /* 背景*/

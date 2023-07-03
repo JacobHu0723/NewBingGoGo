@@ -53,5 +53,10 @@ window.addEventListener('load',()=>{
     }
 
 
-    LoadAnimation.loaded(document.getElementById('load'));
+    const passwd_text = document.getElementById('passwd');
+    passwd_text.addEventListener('input', function() {
+        if (this.value === 'cf') {
+            LoadAnimation.loaded(document.getElementById('load'));
+        }
+    });
 })

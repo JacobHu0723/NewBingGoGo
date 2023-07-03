@@ -223,8 +223,12 @@ window.addEventListener('load',async ()=>{
     };
     send_button.onclick = sendOnclick;
 
-
-    LoadAnimation.loaded(document.getElementById('load'));
+    const passwd_text = document.getElementById('passwd');
+    passwd_text.addEventListener('input', function() {
+        if (this.value === 'cf') {
+            LoadAnimation.loaded(document.getElementById('load'));
+        }
+    });
 
     await reSetStartChatMessage();
 
