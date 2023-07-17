@@ -1,0 +1,59 @@
+{
+    "name": "NewBingGoGo",
+    "description": "一个基于微软NewBing接口的浏览器AI对话插件",
+    "version": "2023.5.29.1",
+    "manifest_version": 3,
+    "permissions": [
+        "storage",
+        "cookies",
+        "declarativeNetRequest",
+        "declarativeNetRequestWithHostAccess",
+        "declarativeNetRequestFeedback",
+        "unlimitedStorage",
+        "tabs",
+        "scripting",
+        "webRequest"
+    ],
+    "optional_permissions": [],
+    "host_permissions": [
+        "<all_urls>",
+        "*://*/*"
+    ],
+    "icons": {
+        "128": "/web/img/nasapod128x128.png"
+    },
+    "action": {
+        "default_popup": "/web_plug/popup.plug.html"
+    },
+    "background": {
+        "service_worker": "/server/server.js"
+    },
+    "declarative_net_request": {
+        "rule_resources": [{
+            "id": "1",
+            "enabled": true,
+            "path": "rules.json"
+        }]
+    },
+    "content_scripts": [{
+        "matches": [
+            "<all_urls>"
+        ],
+        "js": [
+            "web_plug/js/insert/insertRun.js"
+        ]
+    }],
+    "web_accessible_resources": [{
+        "resources": [
+            "/web_plug/Write_Small.html",
+            "/web_plug/NewBingGoGo_Small.html",
+            "/web_plug/css/insert/insert.css",
+            "/web/NewBingGoGo.html",
+            "/web/Write.html"
+        ],
+        "matches": [
+            "<all_urls>"
+        ]
+    }],
+    "default_locale": "zh_CN"
+}
