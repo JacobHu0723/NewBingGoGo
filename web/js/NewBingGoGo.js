@@ -353,15 +353,14 @@ window.addEventListener('load',async ()=>{
         onPreview();
     });
 
+
+
+
+
     input_update_input_text_sstyle_show_update();
     cueWordManager.loadcueWorld().then();
     LoadAnimation.loaded(document.getElementById('load'));
-    // const passwd_text = document.getElementById('passwd');
-    // passwd_text.addEventListener('input', function() {
-    //     if (this.value === 'cf') {
-            
-    //     }
-    // });
+
 
     await reSetStartChatMessage();
     //如果有发送第一条消息的参数
