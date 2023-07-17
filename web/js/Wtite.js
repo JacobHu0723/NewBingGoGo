@@ -222,8 +222,7 @@ window.addEventListener('load',async ()=>{
         send(text).then();
     };
     send_button.onclick = sendOnclick;
-
-
+    
     LoadAnimation.loaded(document.getElementById('load'));
 
     await reSetStartChatMessage();

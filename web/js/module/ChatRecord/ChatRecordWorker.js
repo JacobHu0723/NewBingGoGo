@@ -114,7 +114,7 @@ export default class ChatRecordWorker{
             }else {
                 let div =  document.createElement('div');
                 div.innerHTML = `
-<div class="id">${v.id}</div>
+<!--<div class="id">${v.id}</div>-->
 <div class="name">${v.name}</div>
 <div class="time">${v.creationTime}</div>`;
 

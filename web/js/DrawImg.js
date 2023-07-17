@@ -52,6 +52,5 @@ window.addEventListener('load',()=>{
         startDraw.innerText = '开始作图';
     }
 
-
     LoadAnimation.loaded(document.getElementById('load'));
 })
